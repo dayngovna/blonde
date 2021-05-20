@@ -12,6 +12,7 @@ multidict==5.1.0
 numpy==1.20.3
 opencv-python==4.5.2.52
 Pillow==8.2.0
+pyad==0.6.0
 PyAutoGUI==0.9.52
 PyGetWindow==0.0.9
 PyMsgBox==1.0.9
