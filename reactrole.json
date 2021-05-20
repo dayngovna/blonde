@@ -1,0 +1,38 @@
+[
+    {
+        "role_name": "Py-helper\ud83d\udc0d",
+        "role_id": 784491160269750332,
+        "emoji": "\ud83d\udc0d",
+        "message_id": 802440483845701633
+    },
+    {
+        "role_name": "Discord-helper",
+        "role_id": 789148391569489930,
+        "emoji": "\ud83d\udfe3",
+        "message_id": 802440705049624596
+    },
+    {
+        "role_name": "python",
+        "role_id": 844164490097328138,
+        "emoji": "\ud83d\udc4d",
+        "message_id": 844433108250001409
+    },
+    {
+        "role_name": "java",
+        "role_id": 844164307087392788,
+        "emoji": "\ud83e\uded6",
+        "message_id": 844433196330254356
+    },
+    {
+        "role_name": "android",
+        "role_id": 844164615797211157,
+        "emoji": "\ud83d\udc38",
+        "message_id": 844433290396172308
+    },
+    {
+        "role_name": "arduino",
+        "role_id": 844164551397736460,
+        "emoji": "\ud83d\udcdf",
+        "message_id": 844433377235042314
+    }
+]
