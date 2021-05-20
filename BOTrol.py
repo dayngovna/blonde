@@ -1,5 +1,6 @@
 import discord
 import json
+import os
 from discord.ext import commands
 
 
@@ -73,5 +74,5 @@ async def e48(ctx, emoji, role: discord.Role, *, message):
 
     with open('reactrole.json', 'w') as f:
         json.dump(data, f, indent=4)
-token = os.environ.get('TOKEN')
-client.run(token)
+
+client.run(os.environ.['token'])
