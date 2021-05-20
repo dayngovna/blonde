@@ -74,4 +74,4 @@ async def e48(ctx, emoji, role: discord.Role, *, message):
     with open('reactrole.json', 'w') as f:
         json.dump(data, f, indent=4)
 
-client.run('NjIwMzA0ODkzNzEzODQyMTg3.XXU18w.iP_NSd-N6mcYQzzNivXn9B5ZBM8')
+client.run(TOKENE)
