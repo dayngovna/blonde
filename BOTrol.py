@@ -2,15 +2,21 @@ import discord
 import json
 import os
 from discord.ext import commands
-
+import datetime
+from asyncio import sleep
+import pytz
 client = commands.Bot(command_prefix=">",intents=discord.Intents.all())
 
 
 @client.event
 async def on_ready():
-    print(f"we have logged in as {client.user}")
-    await bot.change_presence(status=discord.Status.online,
-    activity=discord.Game("ekfara bot"))
+    while True:
+          Emos = pytz.timezone("Europe/Moscow")
+          Emos2 = datetime.datetime.now(Emos)
+          ekfar = Emos2.strftime("%H:%M:%S")
+          await bot.change_presence(status=discord.Status.online,
+        activity=discord.Game(ekfar))
+          await sleep(10)
 @client.event
 async def on_raw_reaction_add(payload):
 
@@ -50,8 +56,8 @@ async def e0(ctx):
 #async def e1(ctx, amount = 10):
 #    await ctx.channel.purge(limit = amount)
 @client.command()
-async def e1(ctx)
-await ctx.send("комманда удалена")
+async def e1(ctx):
+await ctx.send("удалена")
 @client.command()
 async def e2(ctx, *,  avamember : discord.Member=None):
     userAvatarUrl = avamember.avatar_url
