@@ -57,7 +57,7 @@ async def e0(ctx):
 #    await ctx.channel.purge(limit = amount)
 @client.command()
 async def e1(ctx):
-await ctx.send("удалена")
+    await ctx.send("удалена")
 @client.command()
 async def e2(ctx, *,  avamember : discord.Member=None):
     userAvatarUrl = avamember.avatar_url
