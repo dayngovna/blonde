@@ -17,7 +17,7 @@ async def on_ready():
           Emos2 = datetime.datetime.now(Emos)
           ekfar = Emos2.strftime("%H:%M:%S")
           await client.change_presence(status=discord.Status.online,
-              activity=discord.Game("ekfara bot")) 
+              activity=discord.Game(ekfar)) 
           await sleep(10)
 @client.event
 async def on_raw_reaction_add(payload):
