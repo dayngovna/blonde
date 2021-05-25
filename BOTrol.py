@@ -12,6 +12,9 @@ client = commands.Bot(command_prefix=">",intents=discord.Intents.all())
 @client.event
 async def on_ready():
     print(f"we have logged in as {client.user}")
+    await bot.change_presence(status=discord.Status.online,
+    activity=discord.Game("ekfara bot"))
+    await sleep(60)
     while True:
           Emos = pytz.timezone("Europe/Moscow")
           Emos2 = datetime.datetime.now(Emos)
