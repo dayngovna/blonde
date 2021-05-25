@@ -54,9 +54,9 @@ async def on_raw_reaction_remove(payload):
 @client.command()
 async def e0(ctx):
     await ctx.channel.send(f"Hello! {ctx.author.mention}")
-@client.command(pass_context=True)
-async def e1(ctx, amount = 10):
-    await ctx.channel.purge(limit = amount)
+#@client.command(pass_context=True)
+#async def e1(ctx, amount = 10):
+#    await ctx.channel.purge(limit = amount)
 @client.command()
 async def e2(ctx, *,  avamember : discord.Member=None):
     userAvatarUrl = avamember.avatar_url
