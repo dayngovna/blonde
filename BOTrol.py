@@ -10,8 +10,13 @@ client = commands.Bot(command_prefix=">",intents=discord.Intents.all())
 @client.event
 async def on_ready():
     print(f"we have logged in as {client.user}")
-    await client.change_presence(status=discord.Status.online,
-        activity=discord.Game("ekfara bot")) 
+    while True:
+          Emos = pytz.timezone("Europe/Moscow")
+          Emos2 = datetime.datetime.now(Emos)
+          ekfar = Emos2.strftime("%H:%M:%S")
+          await bot.change_presence(status=discord.Status.online,
+        activity=discord.Game(ekfar))
+          await sleep(10)
 @client.event
 async def on_raw_reaction_add(payload):
 
